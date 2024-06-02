@@ -1,14 +1,16 @@
-from db_connection import get_db
+from db_connection import execute_query
 
-# Sample function to query data from the database
 def query_data(query: str):
-    db = next(get_db())
-    result = db.execute(query).fetchall()
-    return result
+    try:
+        result = execute_query(query)
+        return result
+    except Exception as e:
+        print(f"Error executing query: {e}")
+        return []
 
 # Example usage
 if __name__ == "__main__":
-    sample_query = "SELECT * FROM your_table LIMIT 10;"
+    sample_query = "SELECT * FROM discord_messages LIMIT 10;"
     data = query_data(sample_query)
     for row in data:
         print(row)

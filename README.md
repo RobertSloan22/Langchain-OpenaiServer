@@ -1,1 +1,1 @@
-![image](https://github.com/RobertSloan22/Langchain-OpenaiServer/assets/89170263/84b43f5c-a75c-4a20-94df-5ab7afa45c56)
+![image](https://github.com/RobertSloan22/Langchain-OpenaiServer/assets/89170263/e88455e2-3eac-4efd-898f-7d2a76785da7)
